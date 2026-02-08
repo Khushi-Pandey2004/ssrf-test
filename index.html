@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta http-equiv="refresh" content="0; url=http://127.0.0.1:3000/">
+</head>
 <body>
-
-<h2>Internal Service (JS render)</h2>
-<pre id="out">Loading internal page…</pre>
-
-<script>
-fetch("http://127.0.0.1:3000/", { mode: "no-cors" })
-  .then(r => r.text())
-  .then(t => {
-    document.getElementById("out").innerHTML = t;
-  })
-  .catch(e => {
-    document.getElementById("out").innerText = "ERROR: " + e;
-  });
-</script>
-
+<p>Redirecting to internal service…</p>
 </body>
 </html>
