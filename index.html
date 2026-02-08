@@ -5,7 +5,7 @@
 <pre id="out">Loading…</pre>
 
 <script>
-fetch("http://127.0.0.1:5000", { mode: "no-cors" })
+fetch("http://127.0.0.1:8000", { mode: "no-cors" })
   .then(() => document.getElementById("out").innerText = "FETCH SENT (no-cors)")
   .catch(e => document.getElementById("out").innerText = "ERROR: " + e);
 </script>
