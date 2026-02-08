@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>JS SSRF probe</h2>
-<pre id="out">Loading…</pre>
+<h2>Internal Service</h2>
 
-<script>
-fetch("http://127.0.0.1:3000", { mode: "no-cors" })
-  .then(() => document.getElementById("out").innerText = "FETCH SENT (no-cors)")
-  .catch(e => document.getElementById("out").innerText = "ERROR: " + e);
-</script>
+<iframe 
+  src="http://127.0.0.1:3000/" 
+  width="1200" 
+  height="800">
+</iframe>
+
 </body>
 </html>
