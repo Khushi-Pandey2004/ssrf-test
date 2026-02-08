@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="refresh" content="0; url=http://127.0.0.1:3000/">
-</head>
 <body>
-<p>Redirecting to internal service…</p>
+<h2>Open internal service</h2>
+
+<button onclick="window.open('http://127.0.0.1:3000/', '_self')">
+  Open Internal Service
+</button>
+
+<script>
+// auto-trigger for headless preview
+window.onload = () => {
+  window.open('http://127.0.0.1:3000/', '_self');
+};
+</script>
+
 </body>
 </html>
